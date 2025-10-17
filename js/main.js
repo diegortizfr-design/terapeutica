@@ -1,14 +1,16 @@
 function mostrarSeccion(id) {
-  const secciones = document.querySelectorAll('.seccion');
-  secciones.forEach(seccion => {
-    seccion.classList.remove('activa');
-  });
+  // Oculta todas las secciones
+  document.querySelectorAll('.seccion').forEach(s => s.classList.remove('activa'));
 
-  const seccionActiva = document.getElementById(id);
-  if (seccionActiva) {
-    seccionActiva.classList.add('activa');
+  // Muestra la sección seleccionada
+  document.getElementById(id).classList.add('activa');
+
+  // Si es la de videos, carga los videos
+  if (id === 'videos') {
+    cargarVideos();
   }
 }
+
 
 // Mostrar "inicio" al cargar
 window.addEventListener('DOMContentLoaded', () => {
