@@ -1,0 +1,113 @@
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ENCABEZADO */
+header {
+  background: linear-gradient(to right, #b3f0db, #d4fff6);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Grupos de menú */
+.nav-left,
+.nav-right {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Enlaces del menú */
+.nav-left a,
+.nav-right a {
+  text-decoration: none;
+  color: #2d7a43;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  color: #008c6f;
+}
+
+/* LOGO */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 150px;
+  width: auto;
+}
+
+/* SECCIONES */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  background-color: #2d7a43;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+/* 🎥 Sección de videos */
+.videos-section {
+  padding: 60px 20px;
+  background-color: var(--color-fondo);
+  text-align: center;
+}
+
+.videos-section h2 {
+  color: var(--color-principal);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.videos-section p {
+  color: var(--color-texto);
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-item iframe:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
