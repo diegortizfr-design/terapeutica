@@ -16,11 +16,9 @@
   <header>
     <div class="navbar">
       <ul class="nav-left">
-        <footer>
-        <li><a href="#INICIO">INICIO</a></li>
-        <li><a href="#VIDEOS">VIDEOS</a></li>
-        <li><a href="#BLOGS">BLOGS</a></li>
-        </footer>
+        <li><a href="#" onclick="mostrarSeccion('inicio')">INICIO</a></li>
+        <li><a href="#" onclick="mostrarSeccion('videos')">VIDEOS</a></li>
+        <li><a href="#" onclick="mostrarSeccion('blogs')">BLOGS</a></li>
       </ul>
 
       <div class="logo-container">
@@ -28,43 +26,63 @@
       </div>
 
       <ul class="nav-right">
-        <li><a href="#COMUNIDAD">COMUNIDAD</a></li>
-        <li><a href="#TIENDA">TIENDA</a></li>
-        <li><a href="#INFORMACION GENERAL">INFORMACION </a></li>
+        <li><a href="#" onclick="mostrarSeccion('comunidad')">COMUNIDAD</a></li>
+        <li><a href="#" onclick="mostrarSeccion('tienda')">TIENDA</a></li>
+        <li><a href="#" onclick="mostrarSeccion('informacion')">INFORMACIÓN</a></li>
       </ul>
     </div>
   </header>
 
   <!-- SECCIONES -->
-  <section id="inicio">
-    <h2>BIENVENIDOS</h2>
-    <p>Esta es la página principal de nuestro proyecto web enfocado en la salud, bienestar y equilibrio terapéutico. 🌱</p>
-  </section>
-    <section id="videos" class="videos-section">
-        <h2>Videos</h2>
-        <p>Explora contenido sobre bienestar, equilibrio y salud terapéutica.</p>
-        <div class="video-container">
-        <iframe 
-        width="500" 
-        height="450" 
-        src="https://www.youtube.com/embed/zf_Uc_pMqVs"
-        title="Rodilla Inflamada/ ¿Qué es?"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-        </iframe>
-        </div>
+  <main>
+    <section id="inicio" class="seccion activa">
+      <h2>BIENVENIDOS</h2>
+      <p>Esta es la página principal de nuestro proyecto web enfocado en la salud, bienestar y equilibrio terapéutico. 🌱</p>
     </section>
 
+    <section id="videos" class="seccion">
+      <h2>VIDEOS</h2>
+      <p>Explora contenido sobre bienestar, equilibrio y salud terapéutica.</p>
+      <div class="video-container">
+        <iframe 
+          width="500" 
+          height="450" 
+          src="https://www.youtube.com/embed/zf_Uc_pMqVs"
+          title="Rodilla Inflamada/ ¿Qué es?"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
 
+    <section id="blogs" class="seccion">
+      <h2>BLOGS</h2>
+      <p>Lee nuestros artículos sobre salud, hábitos y bienestar natural.</p>
+    </section>
 
-  </div>
-</section>
+    <section id="comunidad" class="seccion">
+      <h2>COMUNIDAD</h2>
+      <p>Únete a nuestra comunidad terapéutica y comparte tu experiencia.</p>
+    </section>
 
+    <section id="tienda" class="seccion">
+      <h2>TIENDA</h2>
+      <p>Descubre productos que promueven tu bienestar.</p>
+    </section>
+
+    <section id="informacion" class="seccion">
+      <h2>INFORMACIÓN</h2>
+      <p>Conoce más sobre nosotros y nuestro propósito de salud integral.</p>
+    </section>
+  </main>
 
   <footer>
     © 2025 Terapéutica: Salud y Bienestar — Todos los derechos reservados.
   </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
 </body>
 </html>
